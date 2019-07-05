@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>temperature transfer</title>
+</head>
+<body>
+<script>
+    function Temperature(celsius) {
+        this.celsius = celsius;
+        this.fahrenheit = function () {
+            let fah = 9/5*celsius + 32
+            alert("Temperature is = " + fah + " Fahrenheit");
+        }
+        this.kenvin  = function () {
+            let kev = celsius + 273.15
+            alert("Temperature is = " + kev + " Kenvin");
+        }
+    }
+
+    let temper = new Temperature(Number(prompt("Enter the temperature")));
+    temper.fahrenheit();
+    temper.kenvin();
+
+</script>
+</body>
+</html>
